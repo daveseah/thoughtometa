@@ -1,0 +1,12 @@
+{
+  "name"        : "thoughtometa",
+  "version"     : "0.0.1",
+  "description" : "experimental code-driven knowledge authoring tool",
+  "scripts" : {
+    "start"     : "node app/main.js",
+    "debug"     : "node --inspect app/main.js",
+    "test"      : "echo \"Error: no test specified\" && exit 1"
+  },
+  "author"      : "Dave Seah",
+  "license"     : "MIT"
+}
