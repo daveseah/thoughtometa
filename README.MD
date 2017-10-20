@@ -8,4 +8,4 @@ My goal is to have a minimally-distracting writing environment that helps me res
 
 How to do this is a mystery to me. I'm planning on building the system on NodeJS, gulp, git, and Metalsmith, as these are tools that I am growing more familiar with in my other work. 
 
-See the [wiki](/wiki) for more infomation.
+See the [wiki](../../wiki) for more infomation.
