@@ -17,9 +17,6 @@
 npm-debug.log
 *.tmproj
 
-# Ignore generated files in output folder
-/public
-
 # Numerous always-ignore extensions
 *~
 *.diff
@@ -49,3 +46,7 @@ Thumbs.db
 
 # Ignore JetBrains' IDEs
 .idea
+
+# Ignore THOUGHTOMETA _html directories
+# Ignore generated files in output folder
+/thoughts_html

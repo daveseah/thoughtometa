@@ -1,0 +1,22 @@
+---
+ContentSubj: Making the Best Possible Pizza at Home
+ContentPath: /pizza/best-at-home
+ContentKeys: pizza stone, oven, thin crust
+ContentForm: GUIDE
+---
+[summary]
+here's the summary of this article. this tag will be overidden by the next tag.
+// markup comment
+;; this is also a markup comment
+
+[draft]
+this content doesn't get published
+
+[freestyle]
+content blob here
+I hate oven pizza at home because the crust is terrible. 
+It must be possible to make better pizza at home using a pizza stone. 
+How to make the best pizza?
+
+[img /pizza/example-bad-pizza.jpg full]
+[gallery /pizza/pizzas/* col:4]
