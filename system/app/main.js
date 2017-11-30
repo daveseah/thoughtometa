@@ -108,6 +108,23 @@ const define = function plugin (options) {
 	}
 }
 
+const thoughtparser = function plugin (options) {
+	/*/
+		read the buffer and break into lines.
+		iterate over all lines
+		  if comment: next
+		  if valid section header [sectionheader]
+		    if (section) CloseSection();
+		    section = OpenSection(sectionheader)
+		  else
+		    section += line;	
+	/*/
+	return function (files, metalsmith, done) {
+		console.log('thoughtparser');
+		return done();
+	}
+}
+
 
 /** RUNTIME ******************************************************************/
 
@@ -154,6 +171,7 @@ const define = function plugin (options) {
 			// done processing, so trigger callback()
 			callback();
 		})
+		.use( thoughtparser() )
 		.use( markdown( {
 			"smartypants" : true,
 			"gfm"         : true,
