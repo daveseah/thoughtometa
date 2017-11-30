@@ -5,16 +5,39 @@
 	Concept: create a module that allows us to define chunks of data that
 	can be tagged.
 
+	METASMITH OPERATORS
+
+	.source( path )      - get/set source directory
+	.use ( plugin )
+	.destination( path ) - get/set destination directory
+	.build( fn )
+	---
+	.clean( bool )       - erase destination directory
+	.concurrency( max )  - max number of files to have open 
+	.directory( dir )    - get/set working directory
+	.frontmatter( bool ) - whether to parse front-matter
+	.ignore( path )      - paths/glob to ignore
+	.metadata( json )    - get/set global metadata 
+	.path( paths... )    - resolve paths relative to working dir
+	.process()           - run files through plugins but don't write
+	.read( dir )         - read directionary of files, return files
+	.readFile( path )    - read a file, return data
+	.run( files, fn )    - run all middleware funcs on files, errfn
+	.write( dir )        - write a dictionary of files to path/destination dir
+	.writeFile( f, dat)  - write data to filepath
+
 	METASMITH PLUGIN MODULES IN USE
+	note: there are many plugins to choose from, so make sure to look for alts!
 
 	"markdown"    - takes source file object and expands markdown into HTML
 	"collections" - creates collection objects that can be iterated over
 	"permalinks"  - renames/sets the 'path' metadata based on properties (e.g. title)
 	"drafts"      - skips files that have frontmatter 'draft: true'
 	"define"      - allows you to set variables in the chain
-	"templates"   -
+	"templates"   - 
 	"express"     -
 	"watch"       -
+
 
 \*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -~v~- ///////////////////////////////////*/
 
